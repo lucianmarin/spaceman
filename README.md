@@ -6,7 +6,7 @@ The default Jekyll theme.
 ### The features
 
 * Responsive design — tablet first, smartphone second, desktop third
-* Pygments support with Solarised (Light)
+* Pygments support with Solarized (Light)
 * Webfonts used: Source Sans Pro and Ubuntu families
 * Social bar icons, easy to change from _config.yml
 * Sass by default
@@ -14,6 +14,6 @@ The default Jekyll theme.
 
 ### New stuff coming
 
-* Dark design with Socialized (Dark)
+* Dark design with Solarized (Dark)
 * More optimisations to Markdown support
-* More builtin styles
+* More built-in styles
