@@ -2,9 +2,10 @@
 layout:     post
 date:       2013-09-04 13:37
 title:      "Hello, World!"
+author:     Data
 ---
 
-[Lorem ipsum](http://en.wikipedia.org/wiki/Lorem_ipsum) dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus massa at augue laoreet bibendum. Aliquam placerat, nibh nec luctus imperdiet, justo arcu varius odio, viverra adipiscing purus velit non libero. Nam sed velit dapibus est feugiat commodo sit amet at felis.
+Aliquam placerat, nibh nec luctus imperdiet, justo arcu varius odio, viverra adipiscing purus velit non libero. [Lorem ipsum dolor](http://en.wikipedia.org/wiki/Lorem_ipsum) sit amet, consectetur adipiscing elit. Vestibulum faucibus massa at augue laoreet bibendum.
  
 Donec mollis, augue nec aliquam placerat, mi augue hendrerit sem, a congue velit lacus in lectus. Nullam molestie dolor at augue convallis, imperdiet pharetra nibh dapibus. Curabitur sit amet imperdiet leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus ac pulvinar orci.
 
