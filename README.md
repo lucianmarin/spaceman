@@ -1,4 +1,4 @@
-spaceman
+Spaceman
 ========
 
-Jekyll theme
+The default Jekyll theme.
