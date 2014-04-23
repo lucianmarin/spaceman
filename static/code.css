@@ -6,8 +6,7 @@ Solarized Light
 @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro);
 
 .highlight {
-    margin: 10px 0;
-    padding-left: 35px;
+    margin-left: -8px;
     }
     .highlight .lineno {
         color: #b4b2b0;
