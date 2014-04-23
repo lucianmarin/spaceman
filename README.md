@@ -7,6 +7,7 @@ The default Jekyll theme.
 
 * Responsive design — tablet first, smartphone second, desktop third
 * Pygments support with Solarized (Light)
+* Multiple authors support
 * Webfonts used: Source Sans Pro and Ubuntu families
 * Social bar icons, easy to change from _config.yml
 * Sass by default
