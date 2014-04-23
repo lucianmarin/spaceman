@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimal-ui" />
-    <meta name="description" content="Spaceman. The perfect template for Jekyll." />
+    <meta name="description" content="{{ site.description }}" />
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/static/style.css" />
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/rss.xml" />
@@ -19,8 +19,8 @@
 <div class="menu">
     <div class="content">
         <ul>
-            <li class="journal {% if page.section == "journal" %}selected{% endif %}">
-                <a href="/">Spaceman</a>
+            <li class="index {% if page.section == "index" %}selected{% endif %}">
+                <a href="/">{{site.name}}</a>
             </li>
             <li class="archive {% if page.section == None or page.section == "archive" %}selected{% endif %}">
                 <a href="/archive/">Archive</a>
@@ -37,8 +37,6 @@
         <h1 class="title">
             {% if page.subtitle %}
                 {{ page.subtitle }}
-            {% elsif page.category %}
-                Article
             {% else %}
                 Archive
             {% endif %}

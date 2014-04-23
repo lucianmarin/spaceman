@@ -9,6 +9,9 @@ layout: default
     <div class="meta">
         <span>{{ page.date | date: "%e %b %Y" }}</span>
         <span>{{ page.date | date: "%H:%M" }}</span>
+        {% if page.author %}
+            <span>{{ page.author }}</span>
+        {% endif %}
     </div>
     <div class="post full">
         {{ content }}

@@ -1,5 +1,7 @@
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic,700italic&subset=latin,latin-ext)
+// add the necesary language subsets to each font: &subset=latin,latin-ext
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic,700italic)
 @import url(http://fonts.googleapis.com/css?family=Ubuntu)
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono)
 
 // before
 $black: #343536
@@ -23,14 +25,15 @@ $yellow: #fdc200
 $teal: #009ea0
 $yellow: #fcb514 
 
+::-moz-selection
+    background: lighten($yellow, 25%)
+
+::selection
+    background: lighten($yellow, 25%)
+
 *
     margin: 0
     padding: 0
-
-a
-    text-decoration: none
-    color: $black
-    transition: color 0.25s
 
 body
     background-color: $bg
@@ -40,12 +43,13 @@ body
     color: $black
     text-rendering: optimizeLegibility
 
-::-moz-selection
-    background: lighten($yellow, 25%)
+a
+    text-decoration: none
+    color: $black
+    transition: color 0.25s
 
-::selection
-    background: lighten($yellow, 25%)
-
+h1, h2, h3, h4,
+    font-weight: normal
 
 // social bar at the bottom
 
@@ -143,6 +147,7 @@ a.typo
         white-space: nowrap
 
 .footer
+    margin-top: 16px
     margin-bottom: 32px
     text-align: center
     overflow: hidden
@@ -211,33 +216,67 @@ a.typo
             text-indent: 0
         img
             margin: 10px 0
-            margin-left: 40px
             display: block
             border: $white 6px solid
             border-radius: 4px
+            width: 100%
+            height: auto
         sup
             font-size: 12px
             line-height: 15px
             color: $silver
+        code
+            background-color: $teal
+            color: $white
+            padding: 0 4px
+            border-bottom: $teal 2px solid
+            border-radius: 4px            
     ul
         list-style: square
         margin-left: 40px
     ol
         margin-left: 40px
-    h4
-        font-size: 20px
-        line-height: 24px
-        font-weight: normal
+    code
+        font-family: "Ubuntu Mono", monospace
+    pre
+        margin: 8px 0
+        margin-left: 40px
+        color: grey
+    h1, h2, h3, h4, h5, h6
         text-indent: 40px
         color: $teal
-        margin-top: 8px
-        margin-bottom: 8px
+    h1
+        font-size: 30px
+        font-weight: 300
+        line-height: 32px
+        margin: 16px 0
+    h2
+        font-size: 28px
+        font-weight: 300
+        line-height: 32px
+        margin: 14px 0
+    h3
+        font-size: 24px
+        line-height: 30px
+        margin: 10px 0
+    h4
+        font-size: 18px
+        line-height: 23px
+        font-weight: normal
+        margin: 8px 0
+    h5, h6
+        font-size: 13px
+        line-height: 23px
+        text-transform: uppercase
+        margin: 6px 0
     blockquote
         margin-left: 20px
-        border-left: #ddd 1px solid
+        border-left: $silver 1px solid
         padding-left: 19px
         margin-top: 10px
         margin-bottom: 10px
+        p
+            text-indent: 0
     a
         background-color: lighten($yellow, 25%)
         color: $black
@@ -273,7 +312,7 @@ a.typo
             float: left
             color: $silver
             text-align: right
-            margin-right: 15px
+            margin-right: 20px
 
 .browse
     color: $teal

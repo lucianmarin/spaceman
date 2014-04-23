@@ -5,13 +5,6 @@ Solarized Light
 
 @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro);
 
-pre,
-code {
-    font-family: "Source Code Pro", monospace;
-    font-size: 14px;
-    line-height: 21px;
-    }
-
 .highlight {
     margin: 10px 0;
     padding-left: 35px;
