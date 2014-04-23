@@ -1,0 +1,25 @@
+---
+layout: default
+title: Jekyll theme
+subtitle: Spaceman
+section: journal
+syntax: true
+---
+
+{% for post in site.posts limit:4 %}
+    <div class="entry">
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <div class="meta">
+            <span>{{ post.date | date: "%e %b %Y" }}</span>
+            <span>{{ post.date | date: "%H:%M" }}</span>
+            <span>
+                <a href="/category/{{ post.category }}.html">
+                    {{ post.category | replace: '-', ' ' }}
+                </a>
+            </span>
+        </div>
+        <div class="post">
+            {% assign lines = post.content | split: '</p>' %}{{ lines[0] }}</p>
+        </div>
+    </div>
+{% endfor %}

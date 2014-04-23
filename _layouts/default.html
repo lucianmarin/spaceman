@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimal-ui" />
+    <meta name="description" content="Spaceman. The perfect template for Jekyll." />
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/rss.xml" />
+    {% if page.syntax == true %}
+        <link rel="stylesheet" href="/static/code.css" />
+    {% endif %}
+    {% if page.style == "black" %}
+        <link rel="stylesheet" href="/static/dark.css" />
+    {% endif %}
+</head>
+<body>
+
+<div class="menu">
+    <div class="content">
+        <ul>
+            <li class="journal {% if page.section == "journal" %}selected{% endif %}">
+                <a href="/">Spaceman</a>
+            </li>
+            <li class="archive {% if page.section == None or page.section == "archive" %}selected{% endif %}">
+                <a href="/archive/">Archive</a>
+            </li>
+            <li class="about {% if page.section == "about" %}selected{% endif %}">
+                <a href="/about/">About</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="header">
+    <div class="content">
+        <h1 class="title">
+            {% if page.subtitle %}
+                {{ page.subtitle }}
+            {% elsif page.category %}
+                Article
+            {% else %}
+                Archive
+            {% endif %}
+        </h1>
+    </div>
+</div>
+
+<div class="main">
+    <div class="content">
+        {{ content }}
+    </div>
+</div>
+
+<div class="footer">
+    <div class="content">
+        {% include social.html %}
+    </div>
+</div>
+
+</body>
+</html>

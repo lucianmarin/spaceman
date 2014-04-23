@@ -1,0 +1,17 @@
+# site details
+name: Lucian Marin
+description: Designer
+url: http://lucianmarin.com
+# social profiles
+behance: lucianmarin
+dribbble: lucianmarin
+github: lucianmarin/spaceman
+instagram: lucianmarin
+tumblr: lucianmarin
+twitter: lucianmarin
+
+pygments: true
+permalink: /article/:title.html
+
+exclude: [readme.md]
+include: [.htaccess]

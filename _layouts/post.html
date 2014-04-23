@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class="entry">
+    <h2 itemprop="name">
+        <a href="{{ page.url }}">{{ page.title }}</a>
+    </h2>
+    <div class="meta">
+        <span>{{ page.date | date: "%e %b %Y" }}</span>
+        <span>{{ page.date | date: "%H:%M" }}</span>
+    </div>
+    <div class="post full">
+        {{ content }}
+    </div>
+    <div class="browse">
+        {% if page.previous.url %}
+            <p>&larr; &nbsp; <a href="{{ page.previous.url }}">{{ page.previous.title }}</a></p>
+        {% endif %}
+        {% if page.next.url %}
+            <p>&rarr; &nbsp; <a href="{{ page.next.url }}">{{ page.next.title }}</a></p>
+        {% endif %}
+    </div>
+</div>

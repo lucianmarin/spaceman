@@ -1,0 +1,15 @@
+---
+layout: default
+title: Lucian Marin
+subtitle: Archive
+permalink: /archive/
+section: archive
+---
+
+<div class="entry archive">
+    <ol>
+        {% for post in site.posts %}
+            {% include item.html %}
+        {% endfor %}
+    </ol>
+</div>

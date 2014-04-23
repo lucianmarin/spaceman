@@ -1,0 +1,33 @@
+body {
+  background-color: #1b1d1f; }
+
+.menu ul li a {
+  color: #4d5053; }
+  .menu ul li a:hover {
+    color: #828384; }
+.menu ul li.selected a {
+  color: #fcb514; }
+
+.header {
+  color: black; }
+
+.grid img {
+  border-color: black; }
+
+.main h2 a {
+  color: white; }
+  .main h2 a:hover {
+    color: #828384; }
+
+.meta {
+  color: #828384; }
+  .meta a {
+    color: #828384; }
+    .meta a:hover {
+      color: #fcb514; }
+
+a.typo {
+  background: black url(social.png) no-repeat;
+  border-color: black;
+  background-position: 0px 0px;
+  background-size: 140px 20px; }
