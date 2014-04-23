@@ -285,7 +285,8 @@ a.typo {
 
 .browse {
   color: #009ea0;
-  margin: 15px 0; }
+  margin-top: -10px;
+  margin-bottom: 20px; }
   .browse p {
     padding-left: 40px;
     line-height: 30px; }
