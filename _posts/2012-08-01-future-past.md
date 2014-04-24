@@ -3,6 +3,7 @@ layout:     post
 date:       2012-08-01 13:37
 title:      "The Future's Past"
 author:     Picard
+style:      dark
 ---
 
 Now what are the possibilities of warp drive? Cmdr Riker's nervous system has been invaded by an unknown microorganism. The organisms fuse to the nerve, intertwining at the molecular level. That's why the transporter's biofilters couldn't extract it. The vertex waves show a K-complex corresponding to an REM state. The engineering section's critical. Destruction is imminent.

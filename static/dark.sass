@@ -11,11 +11,12 @@ $grey: #77797a
 
 $pink: #fcb514 
 
-$silver: desaturate(lighten($bg, 40%), 6%)
+$silver: desaturate(lighten($bg, 60%), 6%)
 $grey: desaturate(lighten($bg, 20%), 3%)
 
 body
     background-color: $bg
+    color: $silver
 
 .menu ul li
     a
@@ -39,9 +40,9 @@ body
             color: $silver
 
 .meta
-    color: $silver
+    color: $grey
     a
-        color: $silver
+        color: $grey
         &:hover
             color: $pink
 
@@ -50,3 +51,29 @@ a.typo
     border-color: $black
     background-position: 0px 0px
     background-size: 140px 20px
+
+.post
+    p
+        img
+            border-color: $black
+        code
+            color: black
+    blockquote
+        border-color: $grey
+    .info
+        .name:after, .domain:after
+            color: $grey
+
+.browse
+    p:first-child
+        border-bottom: $grey 1px solid
+
+.archive
+    ol
+        li
+            a:hover
+                background-color: $black
+    .title
+        color: $silver !important
+    .date
+        color: $silver

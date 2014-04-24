@@ -1,10 +1,11 @@
 body {
-  background-color: #1b1d1f; }
+  background-color: #1b1d1f;
+  color: #b5b6b7; }
 
 .menu ul li a {
   color: #4d5053; }
   .menu ul li a:hover {
-    color: #828384; }
+    color: #b5b6b7; }
 .menu ul li.selected a {
   color: #fcb514; }
 
@@ -17,12 +18,12 @@ body {
 .main h2 a {
   color: white; }
   .main h2 a:hover {
-    color: #828384; }
+    color: #b5b6b7; }
 
 .meta {
-  color: #828384; }
+  color: #4d5053; }
   .meta a {
-    color: #828384; }
+    color: #4d5053; }
     .meta a:hover {
       color: #fcb514; }
 
@@ -31,3 +32,22 @@ a.typo {
   border-color: black;
   background-position: 0px 0px;
   background-size: 140px 20px; }
+
+.post p img {
+  border-color: black; }
+.post p code {
+  color: black; }
+.post blockquote {
+  border-color: #4d5053; }
+.post .info .name:after, .post .info .domain:after {
+  color: #4d5053; }
+
+.browse p:first-child {
+  border-bottom: #4d5053 1px solid; }
+
+.archive ol li a:hover {
+  background-color: black; }
+.archive .title {
+  color: #b5b6b7 !important; }
+.archive .date {
+  color: #b5b6b7; }
