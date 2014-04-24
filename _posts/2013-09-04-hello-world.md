@@ -4,6 +4,7 @@ date:       2013-09-04 13:37
 title:      "Hello, World!"
 author:     Data
 syntax:     true
+style:      dark
 ---
 
 Aliquam placerat, nibh nec luctus imperdiet, justo arcu varius odio, viverra adipiscing purus velit non libero. [Lorem ipsum dolor](http://en.wikipedia.org/wiki/Lorem_ipsum) sit amet, consectetur adipiscing elit. Vestibulum faucibus massa at augue laoreet bibendum.

@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimal-ui" />
     <meta name="description" content="{{ site.description }}" />
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/static/style.css" />
+    <link rel="stylesheet" href="/static/base.css" />
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/rss.xml" />
-    {% if page.syntax == true %}
-        <link rel="stylesheet" href="/static/code.css" />
+    {% if page.syntax == true and page.style == "dark" %}
+        <link rel="stylesheet" href="/static/solarized-dark.css" />
+    {% elsif page.syntax == true %}
+        <link rel="stylesheet" href="/static/solarized-light.css" />
     {% endif %}
     {% if page.style == "dark" %}
         <link rel="stylesheet" href="/static/dark.css" />
