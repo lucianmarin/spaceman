@@ -1,20 +1,15 @@
-The Spaceman
-============
+Spaceman
+========
 
 The default Jekyll theme.
 
-### The features
+### Features
 
-* Responsive design — tablet first, smartphone second, desktop third
-* Pygments support with Solarized (Light)
-* Multiple authors support
+* Responsive design (tablet 1st, smartphone 2nd, desktop 3rd)
+* Two different styles (Light/Dark)
+* Pygments support with Solarized (Light/Dark)
 * Webfonts used: Source Sans Pro and Ubuntu families
-* Social bar icons, easy to change from _config.yml
-* Sass by default
-* Contact style for email and chat
-
-### New stuff coming
-
-* Dark design with Solarized (Dark)
-* More optimisations to Markdown support
-* More built-in styles
+* Sass by default (compiled CSS files included)
+* Multiple authors support
+* Social bar icons (easy to change IDs from _config.yml)
+* Contact styles for email/chat
