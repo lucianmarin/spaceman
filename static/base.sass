@@ -1,0 +1,366 @@
+// add the necesary language subsets to each font: &subset=latin,latin-ext
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic,700italic)
+@import url(http://fonts.googleapis.com/css?family=Ubuntu)
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono)
+
+// before
+$black: #343536
+$white: #fff
+$silver: #b1b2b0
+$grey: #7d7f7e
+$teal: #00b290
+$yellow: #fee300
+
+$d: 0.2s
+
+// after
+$bg: #e4e2e0
+// $bg: #eae9e7
+$black: #484440
+$silver: #b4b2b0
+$grey: #7a7977
+$yellow: #fdc200
+
+// pantone
+$teal: #009ea0
+$yellow: #fcb514 
+
+::-moz-selection
+    background: lighten($yellow, 25%)
+
+::selection
+    background: lighten($yellow, 25%)
+
+*
+    margin: 0
+    padding: 0
+
+body
+    background-color: $bg
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif
+    font-size: 16px
+    line-height: 23px
+    color: $black
+    text-rendering: optimizeLegibility
+
+a
+    text-decoration: none
+    color: $black
+    transition: color 0.25s
+
+h1, h2, h3, h4,
+    font-weight: normal
+
+// social bar at the bottom
+
+.social
+    height: 26px
+    cursor: default
+
+a.typo
+    background: darken($bg, 10%) url(social.png) no-repeat
+    background-position: 0px 0px
+    background-size: 140px 20px
+    display: inline-block
+    line-height: 20px
+    height: 20px
+    width: 20px
+    border: darken($bg, 10%) 3px solid
+    transition: background-color 0.5s, border 0.5s, box-shadow 1.5s
+    &:hover
+        background-color: $silver
+        border-color: $white
+    &.behance
+        &:hover
+            border-color: #1769ff
+            background-color: #1769ff
+    &.rss
+        background-position: -120px 0px
+        &:hover
+            border-color: #f82
+            background-color: #f82
+    &.twitter
+        background-position: -100px 0px
+        &:hover
+            border-color: #00aced
+            background-color: #00aced
+    &.tumblr
+        background-position: -80px 0px
+        &:hover
+            border-color: #2c4762
+            background-color: #2c4762
+    &.instagram
+        background-position: -60px 0px
+        &:hover
+            border-color: #3f729b
+            background-color: #3f729b
+    &.github
+        background-position: -40px 0px
+        &:hover
+            border-color: #444
+            background-color: #444
+    &.dribbble
+        background-position: -20px 0px
+        &:hover
+            border-color: #ea4c89
+            background-color: #ea4c89
+
+// main classes used for content
+
+.content
+    width: 600px
+    margin: 0 auto
+
+.menu
+    padding: 18px 0 14px 0
+    height: 36px
+    line-height: 36px
+    ul
+        display: block
+        list-style: none
+        li
+            display: block
+            float: left
+            &:first-child
+                margin-left: -12px
+            &:last-child
+                margin-right: -12px
+            a
+                padding: 0 12px
+                display: block
+                color: lighten($grey, 10%)
+                &:hover
+                    color: $silver
+            &.selected a
+                color: $teal
+
+.header
+    color: $white
+    padding-bottom: 32px
+    cursor: default
+    overflow: hidden
+    h1
+        font-weight: bold
+        font-size: 96px
+        line-height: 70px
+        letter-spacing: -4px
+        white-space: nowrap
+
+.footer
+    margin-top: 16px
+    margin-bottom: 32px
+    text-align: center
+    overflow: hidden
+
+.main
+    h2
+        font-weight: bold
+        font-size: 30px
+        line-height: 34px
+        letter-spacing: -1px
+        color: $black
+        a
+            color: $black
+            transition: color 0.6s
+            &:hover
+                color: $silver
+
+.meta
+    font-family: "Ubuntu", Helvetica, Arial, sans-serif
+    font-size: 13px
+    text-transform: uppercase
+    color: $silver
+    margin: 7px 0 6px 0
+    letter-spacing: 1px
+    white-space: nowrap
+    overflow: hidden
+    span
+        margin-right: 25px
+    a
+        color: $silver
+        &:hover
+            color: $teal
+
+.archive
+    ol
+        margin-top: -10px
+        font-size: 20px
+        list-style: none
+        li
+            line-height: 40px
+            margin: 0 -15px
+            a
+                padding: 0 15px
+                display: block
+                background-color: transparent
+                transition: background-color 0.5s
+                border-radius: 4px
+                &:hover
+                    background-color: $white
+    .title
+        color: $black !important
+    .date
+        font-weight: 300
+        text-transform: lowercase
+        float: right
+        b
+            font-weight: 300
+            margin-right: 10px
+            color: $teal !important
+
+.post
+    margin-bottom: 30px
+    p
+        text-indent: 40px
+        &:first-child
+            text-indent: 0
+        img
+            margin: 10px 0
+            display: block
+            border: $white 6px solid
+            border-radius: 4px
+            width: 100%
+            height: auto
+        sup
+            font-size: 12px
+            line-height: 15px
+            color: $silver
+        code
+            background-color: $teal
+            color: $white
+            padding: 0 4px
+            border-bottom: $teal 2px solid
+            border-radius: 4px            
+    ul
+        list-style: square
+        margin-left: 40px
+    ol
+        margin-left: 40px
+    code
+        font-family: "Ubuntu Mono", monospace
+    pre
+        margin: 8px 0
+        margin-left: 40px
+        color: grey
+    h1, h2, h3, h4, h5, h6
+        text-indent: 40px
+        color: $teal
+    h1
+        font-size: 30px
+        font-weight: 300
+        line-height: 32px
+        margin: 16px 0
+    h2
+        font-size: 28px
+        font-weight: 300
+        line-height: 32px
+        margin: 14px 0
+    h3
+        font-size: 24px
+        line-height: 30px
+        margin: 10px 0
+    h4
+        font-size: 18px
+        line-height: 23px
+        font-weight: normal
+        margin: 8px 0
+    h5, h6
+        font-size: 13px
+        line-height: 23px
+        text-transform: uppercase
+        margin: 6px 0
+    blockquote
+        margin-left: 20px
+        border-left: $silver 1px solid
+        padding-left: 19px
+        margin-top: 10px
+        margin-bottom: 10px
+        p
+            text-indent: 0
+    a
+        background-color: lighten($yellow, 25%)
+        color: $black
+        border-bottom: lighten($yellow, 25%) 2px solid
+        border-radius: 4px
+        padding: 0 4px
+        transition: background-color 0.3s, color 0.3s, border 0.3s
+        &:hover
+            background-color: $yellow
+            border-bottom: $yellow 2px solid
+        &.follow
+            background-color: lighten($yellow, 25%)
+            border-bottom: lighten($yellow, 25%) 2px solid
+            &:hover
+                color: $black
+                background-color: $yellow
+                border-bottom: $yellow 2px solid
+    .info
+        font-style: italic
+        text-indent: 0
+        .name:after
+            font-style: italic
+            color: $silver
+            content: " at "
+        .domain:after
+            font-style: italic
+            color: $silver
+            content: " dot "
+        strong
+            font-weight: normal
+            width: 40px
+            display: block
+            float: left
+            color: $silver
+            text-align: right
+            margin-right: 20px
+
+.browse
+    color: $teal
+    margin-top: -10px
+    margin-bottom: 20px
+    p
+        padding-left: 40px
+        line-height: 30px
+        &:first-child
+            border-bottom: darken($bg, 4%) 1px solid
+    a
+        padding-left: 5px
+        color: $grey
+        &:hover
+            color: $teal
+
+// mobile landscape zoom hack
+
+html
+    -webkit-text-size-adjust: 100%
+    -ms-text-size-adjust: 100%
+
+// tablet view
+
+@media (max-width: 700px)
+    .content
+        width: 80%
+    .post p img
+        width: 100%
+        height: auto
+        margin-left: -6px
+    .archive
+        .date
+            display: none
+        li a
+            white-space: nowrap
+
+// smartphone view
+
+@media (max-width: 375px)
+    .content
+        width: 87.5%
+    .meta
+        span
+            display: none
+        span:first-child,
+        span:last-child
+            display: inline
+    .browse
+        p
+            padding-left: 0
