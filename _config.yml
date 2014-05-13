@@ -11,7 +11,7 @@ instagram: lucianmarin
 tumblr: lucianmarin
 twitter: lucianmarin
 
-pygments: true
+highlighter: pygments
 permalink: /article/:title.html
 
 exclude: [readme.md]
