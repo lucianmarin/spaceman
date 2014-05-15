@@ -17,4 +17,5 @@ The default Jekyll theme.
 ### Contributors
 
 @[lucianmarin](https://github.com/lucianmarin) — idea, design, development
+
 @[razvanh](https://github.com/razvanh) — tips and feedback
