@@ -13,3 +13,8 @@ The default Jekyll theme.
 * Multiple authors support
 * Social bar icons (easy to change IDs from _config.yml)
 * Contact styles for email/chat
+
+### Contributors
+
+@[lucianmarin](https://github.com/lucianmarin) — idea, design, development
+@[razvanh](https://github.com/razvanh) — tips and feedback
