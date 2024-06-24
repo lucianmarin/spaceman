@@ -14,6 +14,14 @@ The default Jekyll theme.
 * Social bar icons (easy to change IDs from _config.yml)
 * Contact styles for email/chat
 
+### Preview
+
+Demo at https://minidawn.github.io/
+
+Screenshots:
+- https://dribbble.com/shots/1522840-Spaceman-Dark
+- https://dribbble.com/shots/1357409-iPhone-ready
+
 ### Contributors
 
 @[lucianmarin](https://github.com/lucianmarin) — idea, design, development
