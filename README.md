@@ -1,7 +1,7 @@
 Spaceman
 ========
 
-![screenshot](screenshot.jpg)
+![screenshot](screenshot.png)
 
 The default Jekyll theme.
 
